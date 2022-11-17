@@ -1,0 +1,64 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f6f9;
+}
+
+h1 {
+    position: absolute;
+    font-size: 9rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    z-index: 100;
+    color: #000;
+}
+
+div {
+    background: #9796f0;
+    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
+    background: linear-gradient(to right, #fbc7d4, #9796f0);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.notificacion {
+    position: absolute;
+    margin: 30px 50px;
+    left: -400px;
+    bottom: 50px;
+    padding: 30px;
+    max-width: 300px;
+    border-radius: 20px !important;
+    background: -webkit-linear-gradient(#fff, #fff);
+    background-color: linear-gradient(#fff, #fff) !important;
+    animation: slide 1s linear forwards;
+    transition: opacity .3s ease;
+}
+
+.barra {
+    width: 0%;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 10px 10px 0px !important;
+    background: linear-gradient(to right, #fbc7d4, #9796f0);
+    animation: progres 8s linear forwards;
+}
+
+@keyframes progres {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes slide {
+    to {
+        left: 20px;
+    }
+}
